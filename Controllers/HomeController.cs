@@ -12,5 +12,10 @@ namespace _413proj1.Controllers
         {
             return View();
         }
+
+        public IActionResult ViewAppointments()
+        {
+            return View();
+        }
     }
 }
