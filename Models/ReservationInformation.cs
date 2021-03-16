@@ -20,5 +20,7 @@ namespace _413proj1.Models
         public string Email { get; set; }
 
         public string? PhoneNumber { get; set; }
+
+        //add nullable for the time
        }
     }
