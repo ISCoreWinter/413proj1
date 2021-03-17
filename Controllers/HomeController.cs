@@ -30,11 +30,12 @@ namespace _413proj1.Controllers
             return View();
         }
 
+        [HttpGet]
         public IActionResult SignUpPage()
         {
             return View(new TourViewModel
             {
-                Tours = _repository.Tours.OrderBy(t => ((int) t.Day)).ThenBy(t => t.StartTime).ToList(),
+                Tours = _repository.Tours.OrderBy(t => ((int) t.Day)).ThenBy(t => t.StartTime).Where(t => !t.Reserved).ToList(),
 
                 PagingInfo = new PagingInfo
                 {
@@ -49,16 +50,23 @@ namespace _413proj1.Controllers
             });
         }
 
+        [HttpPost]
+        public IActionResult SignUpPage(TourTimes tour)
+        {
+            if (ModelState.IsValid)
+            {
+                return View("AddInfo", tour);
+            }
+
+            return View();
+        }
+
         [HttpGet]
         public IActionResult AddInfo()
         {
             return View();
         }
 
-        //[HttpPost]
-        //public IActionResult AddInfo()
-        //{
-        //    return View();
-        //}
+        
     }
 }

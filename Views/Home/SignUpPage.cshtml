@@ -21,12 +21,7 @@
         <tbody>
            @foreach (var x in Model.Tours)
             {
-            <tr>
-                <td>@x.Day</td>
-                <td>@x.StartTime</td>
-                <td>@x.Reserved</td>
-                @*put something here for them to select the time and sends them to form @<td></td>*@
-            </tr> 
+                <partial name="ReservationSummary" model="x" />
             }
         </tbody>
     </table>
