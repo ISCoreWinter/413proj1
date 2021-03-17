@@ -17,5 +17,10 @@ namespace _413proj1.Controllers
         {
             return View();
         }
+
+        public IActionResult SignUpPage()
+        {
+            return View();
+        }
     }
 }

@@ -5,7 +5,7 @@
     ViewBag.Title = "Sign Up Page";
 }
 
-@model 413proj1.Models.ViewModels.TourTimes
+@model _413proj1.Models.ViewModels.TourTimes
 
 <div>
     <h2>Select a time to sign up</h2>
@@ -19,7 +19,7 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (413proj1.Models.ViewModels.TourTimes x in Model)
+           <!-- @*foreach (var x in Model)
             {
             <tr>
                 <td>@x.Day</td>
@@ -27,7 +27,7 @@
                 <td>@x.Reserved</td>
                 @*put something here for them to select the time and sends them to form @<td></td>*@
             </tr> 
-            }
+            }-->
         </tbody>
     </table>
 </div>
