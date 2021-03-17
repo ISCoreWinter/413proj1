@@ -22,6 +22,8 @@ namespace _413proj1.Models
         #nullable enable
         public string? PhoneNumber { get; set; }
 
+        public string? TourTime { get; set; }
+
         //add nullable for the time
     }
 }

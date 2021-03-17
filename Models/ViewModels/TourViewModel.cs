@@ -9,5 +9,6 @@ namespace _413proj1.Models.ViewModels
         public IEnumerable<TourTimes> Tours { get; set; }
         public PagingInfo PagingInfo { get; set; }
         public string CurrentCategory { get; set; }
+        public string TimeSelected { get; set; }
     }
 }

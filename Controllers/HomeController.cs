@@ -30,6 +30,7 @@ namespace _413proj1.Controllers
             return View();
         }
 
+        [HttpGet]
         public IActionResult SignUpPage()
         {
             return View(new TourViewModel
@@ -47,6 +48,12 @@ namespace _413proj1.Controllers
                 CurrentCategory = ""
 
             });
+        }
+
+        [HttpPost]
+        public IActionResult SignUpPage(TourViewModel tourTime)
+        {
+            return View(ViewBag.SelectedTime);
         }
 
         [HttpGet]
