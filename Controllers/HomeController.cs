@@ -48,5 +48,17 @@ namespace _413proj1.Controllers
 
             });
         }
+
+        [HttpGet]
+        public IActionResult AddInfo()
+        {
+            return View();
+        }
+
+        //[HttpPost]
+        //public IActionResult AddInfo()
+        //{
+        //    return View();
+        //}
     }
 }
