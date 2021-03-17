@@ -12,10 +12,6 @@ namespace _413proj1.Controllers
 {
     public class HomeController : Controller
     {
-        public HomeController(TourTimesContext con)
-        {
-            context = con;
-        }
         private readonly ILogger<HomeController> _logger;
 
         private ITourRepository _repository;
@@ -79,11 +75,14 @@ namespace _413proj1.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddInfo(ReservationViewModel res)
+        public IActionResult AddInfo(ReservationViewModel res, int tourId)
         {
             if (ModelState.IsValid)
-
             {
+                res.reservation.TourId = tourId;
+
+                res.tour = _context.Tours.Where(t => t.TourId == tourId).SingleOrDefault();
+
                 _context.Reservation.Add(res.reservation);
 
                 TourTimes result = _context.Tours.SingleOrDefault(t => t.TourId == res.tour.TourId);
