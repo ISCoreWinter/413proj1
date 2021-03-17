@@ -10,5 +10,6 @@ namespace _413proj1.Models
 
         }
         public DbSet<TourTimes> Tours { get; set; }
+        public DbSet<ReservationInformation> Reservation { get; set; }
     }
 }
