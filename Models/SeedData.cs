@@ -6,8 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using _413proj1.Models.ViewModels;
 
-namespace _413proj1.Models.ViewModels
+namespace _413proj1.Models
 {
     //this ensures that the DB is populated and loads any pending migrations.
     public class SeedData
@@ -237,7 +238,7 @@ namespace _413proj1.Models.ViewModels
                         Reserved = false,
                     },
                     new TourTimes
-                    { 
+                    {
                         Day = DayOfWeek.Tuesday,
                         StartTime = "5:00 pm",
                         Reserved = false,
@@ -582,5 +583,3 @@ namespace _413proj1.Models.ViewModels
         }
     }
 }
-
-
