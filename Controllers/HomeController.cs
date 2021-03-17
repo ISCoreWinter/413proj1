@@ -57,7 +57,7 @@ namespace _413proj1.Controllers
             {
                 ReservationViewModel res = new ReservationViewModel
                 {
-                    tour = _repository.Tours.Where(t => tourId == null || t.TourId == tourId).SingleOrDefault()
+                    tour = _repository.Tours.Where(t => t.TourId == tourId).SingleOrDefault()
                 };
 
                 return View("AddInfo", res);
@@ -72,6 +72,15 @@ namespace _413proj1.Controllers
             return View();
         }
 
-        
+        [HttpPost]
+        public IActionResult AddInfo(ReservationViewModel reservation)
+        {
+            if (ModelState.IsValid)
+            {
+
+            }
+            return View();
+        }
+
     }
 }
