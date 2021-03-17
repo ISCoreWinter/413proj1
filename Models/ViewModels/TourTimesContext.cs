@@ -16,6 +16,6 @@ namespace _413proj1.Models.ViewModels
         {
 
         }
-        public DbSet<TourBooking> Tours { get; set; }
+        public DbSet<TourTimes> Tours { get; set; }
     }
 }

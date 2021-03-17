@@ -7,10 +7,10 @@ using Microsoft.AspNetCore.Http;
 
 namespace _413proj1.Models.ViewModels
 {
-    public class TourBooking
+    public class TourTimes
     { 
         public DayOfWeek Day { get; set; }
         public string StartTime { get; set; }
+        public bool Reserved { get; set; }
     }
-
 }
