@@ -4,24 +4,24 @@
 @{
     ViewBag.Title = "Sign Up Continued";
 }
-@model _413proj1.Models.ReservationInformation
+@model _413proj1.Models.ViewModels.ReservationViewModel
 
 <h2>Add Your Information</h2>
-<h3>Please fill in the following infomration:</h3>
+<h3>Please fill in the following information for you reservation slot of @Model.tour.Day at @Model.tour.StartTime:</h3>
 
 <div>
     <form asp-action="AddInfo" method="post">
         <div>
-            <label asp-for="GroupName">Group Name:</label>
-            <input asp-for="GroupName" />
+            <label asp-for="reservation.GroupName">Group Name:</label>
+            <input asp-for="reservation.GroupName" />
         </div>
         <div>
-            <label asp-for="Email">Email:</label>
-            <input asp-for="Email" />
+            <label asp-for="reservation.Email">Email:</label>
+            <input asp-for="reservation.Email" />
         </div>
         <div>
-            <label asp-for="PhoneNumber">Phone Number:</label>
-            <input asp-for="PhoneNumber" />
+            <label asp-for="reservation.PhoneNumber">Phone Number:</label>
+            <input asp-for="reservation.PhoneNumber" />
         </div>
     </form>
 </div>

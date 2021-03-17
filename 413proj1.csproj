@@ -8,7 +8,6 @@
   <ItemGroup>
     <Folder Include="wwwroot\lib\bootstrap\" />
     <Folder Include="wwwroot\lib\jquery\" />
-    <Folder Include="Models\ViewModels\" />
     <Folder Include="Infrastructure\" />
   </ItemGroup>
 

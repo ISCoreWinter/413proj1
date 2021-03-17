@@ -51,11 +51,16 @@ namespace _413proj1.Controllers
         }
 
         [HttpPost]
-        public IActionResult SignUpPage(TourTimes tour)
+        public IActionResult SignUpPage(int tourId)
         {
             if (ModelState.IsValid)
             {
-                return View("AddInfo", tour);
+                ReservationViewModel res = new ReservationViewModel
+                {
+                    tour = _repository.Tours.Where(t => tourId == null || t.TourId == tourId).SingleOrDefault()
+                };
+
+                return View("AddInfo", res);
             }
 
             return View();
