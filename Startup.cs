@@ -33,7 +33,7 @@ namespace _413proj1
                 options.UseSqlite(Configuration["ConnectionStrings:TourConnection"]);
             });
             //WE HAVENT MADE THIS YET BUT WE NEED TO
-            //services.AddScoped<ITourRespository, EFTourRespository>();
+            services.AddScoped<ITourRepository, EFTourRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
