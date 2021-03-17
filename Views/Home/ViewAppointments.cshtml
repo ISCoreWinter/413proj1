@@ -1,25 +1,20 @@
-﻿@{
+﻿@model IEnumerable<ReservationInformation>
+@{
     ViewBag.Title = "Appointments Booked";
 }
 
 <div class="text-center">
     <h4>View Appointments</h4>
-
+    //partial view Tour summary
     <br />
 
     <p>All of our appointments that have been booked are listed below.</p>
 </div>
 
-<div class="">
-    <div class="row">
-        <div class="col-4">
-            <h5>Monday</h5>
-        </div>
-        <div class="col-4">
-            <h5>Tuesday</h5>
-        </div>
-        <div class="col-4">
-            <h5>Wednesday</h5>
-        </div>
-    </div>
+<div class="col-6 border border-dark">
+    @foreach (var x in Model)
+    { 
+
+    }
+    </h3>
 </div>
