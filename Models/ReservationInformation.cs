@@ -23,6 +23,8 @@ namespace _413proj1.Models
         #nullable enable
         public string? PhoneNumber { get; set; }
 
+        // this foreign key connects the available times with the reservation information
+
         [ForeignKey("TourTime")]
         public int TourId { get; set; }
     }

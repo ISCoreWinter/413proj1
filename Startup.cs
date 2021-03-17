@@ -32,7 +32,6 @@ namespace _413proj1
             {
                 options.UseSqlite(Configuration["ConnectionStrings:TourConnection"]);
             });
-            //WE HAVENT MADE THIS YET BUT WE NEED TO
             services.AddScoped<ITourRepository, EFTourRepository>();
         }
 
