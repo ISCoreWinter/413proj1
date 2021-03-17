@@ -23,9 +23,7 @@
             <label asp-for="reservation.PhoneNumber">Phone Number:</label>
             <input asp-for="reservation.PhoneNumber" />
         </div>
-        <div>
-
-        </div>
-        <button type="submit">Add Reservation</button>
+        <div asp-validation-summary="All"></div>
+        <button class="btn-dark" type="submit">Submit Reservation </button>
     </form>
 </div>

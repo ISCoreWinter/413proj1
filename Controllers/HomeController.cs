@@ -12,6 +12,11 @@ namespace _413proj1.Controllers
 {
     public class HomeController : Controller
     {
+        private TourTimesContext context { get; set; }
+        public HomeController(TourTimesContext con)
+        {
+            context = con;
+        }
         private readonly ILogger<HomeController> _logger;
 
         private ITourRepository _repository;
