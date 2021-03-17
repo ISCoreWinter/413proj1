@@ -23,6 +23,8 @@
             <label asp-for="reservation.PhoneNumber">Phone Number:</label>
             <input asp-for="reservation.PhoneNumber" />
         </div>
+            <input asp-for="reservation.TourId" type="hidden" name="TourId"
+                   value="@Model.tour.TourId"/>
         <div asp-validation-summary="All"></div>
         <button class="btn-dark" type="submit">Submit Reservation </button>
     </form>

@@ -12,7 +12,6 @@ namespace _413proj1.Controllers
 {
     public class HomeController : Controller
     {
-        private TourTimesContext context { get; set; }
         public HomeController(TourTimesContext con)
         {
             context = con;
@@ -74,7 +73,7 @@ namespace _413proj1.Controllers
         }
 
         [HttpGet]
-        public IActionResult AddInfo()
+        public IActionResult AddInfo(int tourId)
         {
             return View();
         }
@@ -83,6 +82,7 @@ namespace _413proj1.Controllers
         public IActionResult AddInfo(ReservationViewModel res)
         {
             if (ModelState.IsValid)
+
             {
                 _context.Reservation.Add(res.reservation);
 
