@@ -72,6 +72,15 @@ namespace _413proj1.Controllers
             return View();
         }
 
-        
+        [HttpPost]
+        public IActionResult AddInfo(ReservationViewModel reservation)
+        {
+            if (ModelState.IsValid)
+            {
+
+            }
+            return View();
+        }
+
     }
 }
