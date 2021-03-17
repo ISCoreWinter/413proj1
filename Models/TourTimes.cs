@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 
-namespace _413proj1.Models.ViewModels
+namespace _413proj1.Models
 {
     public class TourTimes
     {
@@ -17,4 +17,3 @@ namespace _413proj1.Models.ViewModels
         public bool Reserved { get; set; }
     }
 }
-

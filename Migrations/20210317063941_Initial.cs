@@ -2,7 +2,7 @@
 
 namespace _413proj1.Migrations
 {
-    public partial class Start : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
