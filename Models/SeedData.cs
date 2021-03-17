@@ -24,466 +24,557 @@ namespace _413proj1.Models.ViewModels
             if (!context.Tours.Any())
             {
                 context.Tours.AddRange(
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Sunday,
                         StartTime = "8:00 am",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Sunday,
                         StartTime = "9:00 am",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Sunday,
                         StartTime = "10:00 am",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Sunday,
                         StartTime = "11:00 am",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Sunday,
                         StartTime = "12:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Sunday,
                         StartTime = "1:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Sunday,
                         StartTime = "2:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Sunday,
                         StartTime = "3:00 pm",
+                        Reserved = false
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Sunday,
                         StartTime = "4:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Sunday,
                         StartTime = "5:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Sunday,
                         StartTime = "6:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Sunday,
                         StartTime = "7:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Sunday,
                         StartTime = "8:00 pm",
+                        Reserved = false,
                     },
 
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Monday,
-                          StartTime = "8:00 am",
-                      },
-                    new TourBooking
+                        StartTime = "8:00 am",
+                        Reserved = false,
+                    },
+                    new TourTimes
                     {
                         Day = DayOfWeek.Monday,
                         StartTime = "9:00 am",
+                        Reserved = false
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Monday,
                         StartTime = "10:00 am",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Monday,
                         StartTime = "11:00 am",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Monday,
                         StartTime = "12:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Monday,
                         StartTime = "1:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Monday,
                         StartTime = "2:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Monday,
                         StartTime = "3:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Monday,
                         StartTime = "4:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Monday,
                         StartTime = "5:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Monday,
                         StartTime = "6:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Monday,
                         StartTime = "7:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Monday,
                         StartTime = "8:00 pm",
+                        Reserved = false,
                     },
 
-                    new TourBooking
-                     {
-                         Day = DayOfWeek.Tuesday,
-                         StartTime = "8:00 am",
-                     },
-                    new TourBooking
+                    new TourTimes
+                    {
+                        Day = DayOfWeek.Tuesday,
+                        StartTime = "8:00 am",
+                        Reserved = false,
+                    },
+                    new TourTimes
                     {
                         Day = DayOfWeek.Tuesday,
                         StartTime = "9:00 am",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Tuesday,
                         StartTime = "10:00 am",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Tuesday,
                         StartTime = "11:00 am",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Tuesday,
                         StartTime = "12:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Tuesday,
                         StartTime = "1:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Tuesday,
                         StartTime = "2:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Tuesday,
                         StartTime = "3:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Tuesday,
                         StartTime = "4:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
-                    {
+                    new TourTimes
+                    { 
                         Day = DayOfWeek.Tuesday,
                         StartTime = "5:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Tuesday,
                         StartTime = "6:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Tuesday,
                         StartTime = "7:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Tuesday,
                         StartTime = "8:00 pm",
+                        Reserved = false,
                     },
 
-                     new TourBooking
+                     new TourTimes
                      {
                          Day = DayOfWeek.Wednesday,
                          StartTime = "8:00 am",
+                         Reserved = false,
                      },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Wednesday,
                         StartTime = "9:00 am",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Wednesday,
                         StartTime = "10:00 am",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Wednesday,
                         StartTime = "11:00 am",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Wednesday,
                         StartTime = "12:00 pm",
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Wednesday,
                         StartTime = "1:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Wednesday,
                         StartTime = "2:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Wednesday,
                         StartTime = "3:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Wednesday,
                         StartTime = "4:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Wednesday,
                         StartTime = "5:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Wednesday,
                         StartTime = "6:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Wednesday,
                         StartTime = "7:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Wednesday,
                         StartTime = "8:00 pm",
+                        Reserved = false,
                     },
 
-                    new TourBooking
-                     {
-                         Day = DayOfWeek.Thursday,
-                         StartTime = "8:00 am",
-                     },
-                    new TourBooking
+                    new TourTimes
+                    {
+                        Day = DayOfWeek.Thursday,
+                        StartTime = "8:00 am",
+                        Reserved = false,
+                    },
+                    new TourTimes
                     {
                         Day = DayOfWeek.Thursday,
                         StartTime = "9:00 am",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Thursday,
                         StartTime = "10:00 am",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Thursday,
                         StartTime = "11:00 am",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Thursday,
                         StartTime = "12:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Thursday,
                         StartTime = "1:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Thursday,
                         StartTime = "2:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Thursday,
                         StartTime = "3:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Thursday,
                         StartTime = "4:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Thursday,
                         StartTime = "5:00 pm",
-                    },
-                    new TourBooking
-                    {
-                        Day = DayOfWeek.Thursday,
-                        StartTime = "6:00 pm",
-                    },
-                    new TourBooking
-                    {
-                        Day = DayOfWeek.Thursday,
-                        StartTime = "7:00 pm",
-                    },
-                    new TourBooking
-                    {
-                        Day = DayOfWeek.Thursday,
-                        StartTime = "8:00 pm",
+                        Reserved = false,
                     },
 
-                    new TourBooking
-                     {
-                         Day = DayOfWeek.Friday,
-                         StartTime = "8:00 am",
-                     },
-                    new TourBooking
+                    new TourTimes
                     {
-                        Day = DayOfWeek.Friday,
-                        StartTime = "9:00 am",
-                    },
-                    new TourBooking
-                    {
-                        Day = DayOfWeek.Friday,
-                        StartTime = "10:00 am",
-                    },
-                    new TourBooking
-                    {
-                        Day = DayOfWeek.Friday,
-                        StartTime = "11:00 am",
-                    },
-                    new TourBooking
-                    {
-                        Day = DayOfWeek.Friday,
-                        StartTime = "12:00 pm",
-                    },
-                    new TourBooking
-                    {
-                        Day = DayOfWeek.Friday,
-                        StartTime = "1:00 pm",
-                    },
-                    new TourBooking
-                    {
-                        Day = DayOfWeek.Friday,
-                        StartTime = "2:00 pm",
-                    },
-                    new TourBooking
-                    {
-                        Day = DayOfWeek.Friday,
-                        StartTime = "3:00 pm",
-                    },
-                    new TourBooking
-                    {
-                        Day = DayOfWeek.Friday,
-                        StartTime = "4:00 pm",
-                    },
-                    new TourBooking
-                    {
-                        Day = DayOfWeek.Friday,
-                        StartTime = "5:00 pm",
-                    },
-                    new TourBooking
-                    {
-                        Day = DayOfWeek.Friday,
+                        Day = DayOfWeek.Thursday,
                         StartTime = "6:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
-                        Day = DayOfWeek.Friday,
+                        Day = DayOfWeek.Thursday,
                         StartTime = "7:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
-                        Day = DayOfWeek.Friday,
+                        Day = DayOfWeek.Thursday,
                         StartTime = "8:00 pm",
+                        Reserved = false,
                     },
 
-                    new TourBooking
-                      {
-                          Day = DayOfWeek.Saturday,
-                          StartTime = "8:00 am",
-                      },
-                    new TourBooking
+                    new TourTimes
+                    {
+                        Day = DayOfWeek.Friday,
+                        StartTime = "8:00 am",
+                        Reserved = false,
+                    },
+                    new TourTimes
+                    {
+                        Day = DayOfWeek.Friday,
+                        StartTime = "9:00 am",
+                        Reserved = false,
+                    },
+                    new TourTimes
+                    {
+                        Day = DayOfWeek.Friday,
+                        StartTime = "10:00 am",
+                        Reserved = false,
+                    },
+                    new TourTimes
+                    {
+                        Day = DayOfWeek.Friday,
+                        StartTime = "11:00 am",
+                        Reserved = false,
+                    },
+                    new TourTimes
+                    {
+                        Day = DayOfWeek.Friday,
+                        StartTime = "12:00 pm",
+                        Reserved = false,
+                    },
+                    new TourTimes
+                    {
+                        Day = DayOfWeek.Friday,
+                        StartTime = "1:00 pm",
+                        Reserved = false,
+                    },
+                    new TourTimes
+                    {
+                        Day = DayOfWeek.Friday,
+                        StartTime = "2:00 pm",
+                        Reserved = false,
+                    },
+                    new TourTimes
+                    {
+                        Day = DayOfWeek.Friday,
+                        StartTime = "3:00 pm",
+                        Reserved = false,
+                    },
+                    new TourTimes
+                    {
+                        Day = DayOfWeek.Friday,
+                        StartTime = "4:00 pm",
+                        Reserved = false,
+                    },
+                    new TourTimes
+                    {
+                        Day = DayOfWeek.Friday,
+                        StartTime = "5:00 pm",
+                        Reserved = false,
+                    },
+                    new TourTimes
+                    {
+                        Day = DayOfWeek.Friday,
+                        StartTime = "6:00 pm",
+                        Reserved = false,
+                    },
+                    new TourTimes
+                    {
+                        Day = DayOfWeek.Friday,
+                        StartTime = "7:00 pm",
+                        Reserved = false,
+                    },
+                    new TourTimes
+                    {
+                        Day = DayOfWeek.Friday,
+                        StartTime = "8:00 pm",
+                        Reserved = false,
+                    },
+
+                    new TourTimes
+                    {
+                        Day = DayOfWeek.Saturday,
+                        StartTime = "8:00 am",
+                        Reserved = false,
+                    },
+                    new TourTimes
                     {
                         Day = DayOfWeek.Saturday,
                         StartTime = "9:00 am",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Saturday,
                         StartTime = "10:00 am",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Saturday,
                         StartTime = "11:00 am",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Saturday,
                         StartTime = "12:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Saturday,
                         StartTime = "1:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Saturday,
                         StartTime = "2:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Saturday,
                         StartTime = "3:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Saturday,
                         StartTime = "4:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Saturday,
                         StartTime = "5:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Saturday,
                         StartTime = "6:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Saturday,
                         StartTime = "7:00 pm",
+                        Reserved = false,
                     },
-                    new TourBooking
+                    new TourTimes
                     {
                         Day = DayOfWeek.Saturday,
                         StartTime = "8:00 pm",
+                        Reserved = false,
                     }
                     );
                 context.SaveChanges();
