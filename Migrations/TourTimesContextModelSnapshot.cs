@@ -15,7 +15,7 @@ namespace _413proj1.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "3.1.12");
 
-            modelBuilder.Entity("_413proj1.Models.ViewModels.TourTimes", b =>
+            modelBuilder.Entity("_413proj1.Models.TourTimes", b =>
                 {
                     b.Property<int>("TourId")
                         .ValueGeneratedOnAdd()
