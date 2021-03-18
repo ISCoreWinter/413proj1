@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<ReservationInformation>
+@{
     ViewBag.Title = "Appointments Booked";
 }
 
@@ -10,16 +11,14 @@
     <p>All of our appointments that have been booked are listed below.</p>
 </div>
 
-<div class="">
-    <div class="row">
-        <div class="col-4">
-            <h5>Monday</h5>
-        </div>
-        <div class="col-4">
-            <h5>Tuesday</h5>
-        </div>
-        <div class="col-4">
-            <h5>Wednesday</h5>
-        </div>
-    </div>
+        @foreach (var x in Model)
+        {
+            <td>@x.GroupName</td>
+            <td>@x.Email</td>
+            <td>@x.PhoneNumber</td>
+            <td>@x.TourId</td>
+            <td>@x.StartTime</td>
+        }
+    </table>
 </div>
+

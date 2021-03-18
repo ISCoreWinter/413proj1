@@ -1,6 +1,7 @@
 ﻿using _413proj1.Models;
 using _413proj1.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using OnlineBookstore.Models.ViewModels;
 using System;
@@ -27,7 +28,7 @@ namespace _413proj1.Controllers
 
         public IActionResult ViewAppointments()
         {
-            return View();
+
         }
 
         [HttpGet]
