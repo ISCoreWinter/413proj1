@@ -31,6 +31,8 @@ namespace _413proj1.Controllers
         public IActionResult ViewAppointments()
         {
 
+
+            return View(_context);
         }
 
         [HttpGet]

@@ -1,23 +1,26 @@
-﻿@model IEnumerable<ReservationInformation>
+﻿@model TourTimesContext
 @{
     ViewBag.Title = "Appointments Booked";
 }
 
 <div class="text-center">
     <h4>View Appointments</h4>
-    //partial view Tour summary
     <br />
 
     <p>All of our appointments that have been booked are listed below.</p>
 </div>
 
-        @foreach (var x in Model)
+<div>
+    <table>
+        @foreach (var x in Model.Reservation)
         {
-            <td>@x.GroupName</td>
-            <td>@x.Email</td>
-            <td>@x.PhoneNumber</td>
-            <td>@x.TourId</td>
-            <td>@x.StartTime</td>
+            <tr>
+                <td>@x.GroupName</td>
+                <td>@x.Email</td>
+                <td>@x.PhoneNumber</td>
+                <td>@Model.Tours.Where(t => t.TourId == x.TourId).FirstOrDefault().Day</td>
+                <td>@Model.Tours.Where(t => t.TourId == x.TourId).FirstOrDefault().StartTime</td>
+            </tr>
         }
     </table>
 </div>

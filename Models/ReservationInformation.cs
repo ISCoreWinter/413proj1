@@ -23,7 +23,7 @@ namespace _413proj1.Models
         #nullable enable
         public string? PhoneNumber { get; set; }
 
-        [ForeignKey("TourTime")]
+        [ForeignKey("TourTimes")]
         public int TourId { get; set; }
     }
 }
