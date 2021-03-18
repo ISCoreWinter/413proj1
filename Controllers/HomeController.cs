@@ -16,10 +16,12 @@ namespace _413proj1.Controllers
         private readonly ILogger<HomeController> _logger;
 
         private ITourRepository _repository;
-        public HomeController(ILogger<HomeController> logger, ITourRepository repository)
+        private TourTimesContext _context { get; set; }
+        public HomeController(ILogger<HomeController> logger, ITourRepository repository, TourTimesContext con)
         {
             _logger = logger;
             _repository = repository;
+            _context = con;
         }
         public IActionResult Index()
         {
@@ -68,19 +70,31 @@ namespace _413proj1.Controllers
         }
 
         [HttpGet]
-        public IActionResult AddInfo()
+        public IActionResult AddInfo(int tourId)
         {
             return View();
         }
 
         [HttpPost]
-        public IActionResult AddInfo(ReservationViewModel reservation)
+        public IActionResult AddInfo(ReservationViewModel res, int tourId)
         {
             if (ModelState.IsValid)
             {
+                res.reservation.TourId = tourId;
 
+                res.tour = _context.Tours.Where(t => t.TourId == tourId).SingleOrDefault();
+
+                _context.Reservation.Add(res.reservation);
+
+                TourTimes result = _context.Tours.SingleOrDefault(t => t.TourId == res.tour.TourId);
+                if (result != null)
+                {
+                    result.Reserved = true;
+                }
+
+                _context.SaveChanges();
             }
-            return View();
+            return View("Index");
         }
 
     }

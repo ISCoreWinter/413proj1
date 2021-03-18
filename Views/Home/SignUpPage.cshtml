@@ -6,23 +6,25 @@
 }
 
 @model TourViewModel
-
-<div>
-    <h2>Select a time to sign up</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Day</th>
-                <th>Start Time</th>
-                <th>Reserved</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-           @foreach (var x in Model.Tours)
-            {
-                <partial name="ReservationSummary" model="x" />
-            }
-        </tbody>
-    </table>
+<!--Displays the information for the available times-->
+<div class="text-center; container"><br />
+    <h2 class="text-center">Select a time to sign up:</h2><br />
+    <div class="col-md-auto">
+        <table class="table table-hover table-bordered" style="margin-left: auto; margin-right: auto;">
+            <thead class="table-active">
+                <tr>
+                    <th class="th-sm" style="text-align:center">Day</th>
+                    <th class="th-sm" style="text-align:center">Start Time</th>
+                    @*<th style="text-align:center">Reserved</th>*@
+                    <th class="th-sm" style="text-align:center"></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var x in Model.Tours)
+                {
+                    <partial name="ReservationSummary" model="x" />
+                }
+            </tbody>
+        </table>
+    </div>
 </div>
